@@ -18,20 +18,16 @@ angular
         url: '/',
         templateUrl: 'views/instructions.html'
       })
-      .state('red', {
-        url: '/bricks/red',
+      .state('brick', {
+        url: '/bricks/:color',
         templateUrl: 'views/bricks.html',
-        controller: 'RedBricksCtrl as brick'
-      })
-      .state('blue', {
-        url: '/bricks/blue',
-        templateUrl: 'views/bricks.html',
-        controller: 'BlueBricksCtrl as brick'
-      })
-      .state('green', {
-        url: '/bricks/green',
-        templateUrl: 'views/bricks.html',
-        controller: 'GreenBricksCtrl as brick'
+        controllerProvider: function($stateParams){
+          let color = $stateParams.color;
+          color = color[0].toUpperCase() + color.slice(1);
+          let ctrlName = color + 'BricksCtrl';
+          return ctrlName;
+        },
+        controllerAs: 'brick'
       })
       .state('cart', {
         url: '/cart',
