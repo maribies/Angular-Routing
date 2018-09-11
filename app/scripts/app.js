@@ -22,5 +22,15 @@ angular
         url: '/bricks/red',
         templateUrl: 'views/bricks.html',
         controller: 'RedBricksCtrl as brick'
+      })
+      .state('blue', {
+        url: '/bricks/blue',
+        templateUrl: 'views/bricks.html',
+        controller: 'BlueBricksCtrl as brick'
+      })
+      .state('green', {
+        url: '/bricks/green',
+        templateUrl: 'views/bricks.html',
+        controller: 'GreenBricksCtrl as brick'
       });
   }]);
