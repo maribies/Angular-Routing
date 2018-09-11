@@ -17,5 +17,10 @@ angular
       .state('home', {
         url: '/',
         templateUrl: 'views/instructions.html'
+      })
+      .state('red', {
+        url: '/bricks/red',
+        templateUrl: 'views/bricks.html',
+        controller: 'RedBricksCtrl as brick'
       });
   }]);
