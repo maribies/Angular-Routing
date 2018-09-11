@@ -29,24 +29,10 @@ angular
         },
         controllerAs: 'brick'
       })
-      .state('cart', {
-        url: '/cart',
-        templateUrl: 'views/cart.html',
-        controller: 'CartCtrl as cart'
-      })
-      .state('red.cart', {
-        url: '/cart',
-        templateUrl: 'views/cart.html',
-        controller: 'CartCtrl as cart'
-      })
-      .state('blue.cart', {
-        url: '/cart',
-        templateUrl: 'views/cart.html',
-        controller: 'CartCtrl as cart'
-      })
-      .state('green.cart', {
+      .state('brick.cart', {
         url: '/cart',
         templateUrl: 'views/cart.html',
         controller: 'CartCtrl as cart'
       });
+
   }]);
