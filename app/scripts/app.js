@@ -37,5 +37,20 @@ angular
         url: '/cart',
         templateUrl: 'views/cart.html',
         controller: 'CartCtrl as cart'
+      })
+      .state('red.cart', {
+        url: '/cart',
+        templateUrl: 'views/cart.html',
+        controller: 'CartCtrl as cart'
+      })
+      .state('blue.cart', {
+        url: '/cart',
+        templateUrl: 'views/cart.html',
+        controller: 'CartCtrl as cart'
+      })
+      .state('green.cart', {
+        url: '/cart',
+        templateUrl: 'views/cart.html',
+        controller: 'CartCtrl as cart'
       });
   }]);
