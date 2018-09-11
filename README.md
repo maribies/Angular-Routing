@@ -19,3 +19,4 @@ Starter code for [Udacity](https://www.udacity.com)'s [Front End Frameworks cour
 ## View the app
 
 * on the terminal, run `grunt serve`
+# Angular-Routing
